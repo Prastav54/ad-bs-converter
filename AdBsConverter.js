@@ -188,6 +188,7 @@ const getMilliDifference = (date) => {
 }
 
 export const BSToAD = (date) => {
+  date = date.replaceAll("/", "-");
   let dateData = date.split('-').map(d => parseInt(d, 10));
 
   if ((dateData.length < 3) || !((dateData[0] > 1969) && dateData[0] < 2100) || !((dateData[1] > 0) && (dateData[1] < 13)) || !((dateData[2] > 0) && (dateData[2] <= calendar_data[dateData[0]][dateData[1] - 1]))) {
@@ -197,7 +198,6 @@ export const BSToAD = (date) => {
 
     return null;
   }
-  date = date.replaceAll("/", "-");
   let dateObject = new Date(getMilliDifference(date));
   var year = dateObject.getFullYear();
   var month = ("0" + (dateObject.getMonth() + 1)).slice(-2);
