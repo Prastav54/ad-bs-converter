@@ -1,0 +1,28 @@
+{
+  "name": "ad-bs-date-conversion",
+  "version": "1.0.1",
+  "description": "## - Overview",
+  "main": "AdBsConverter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prastav54/ad-bs-converter.git"
+  },
+  "keywords": [
+    "ADToBS",
+    "BSToAD",
+    "BS",
+    "nepaliCalendar",
+    "dateConverter",
+    "date",
+    "nepaliDate"
+  ],
+  "author": "Prastav Pokhrel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prastav54/ad-bs-converter/issues"
+  },
+  "homepage": "https://github.com/Prastav54/ad-bs-converter#readme"
+}
