@@ -9,16 +9,18 @@ The aim of this package is to convert AD date to BS date and vice versa . Since 
 ### 1) Install
 
 ```bash
-$ npm install --save ad-bs-date-conversion
+npm install --save ad-bs-date-conversion
 ```
 
 ### 2) Usage
 
 ```js
-import { ADToBS, BSToAD } from "ad-bs-date-conversion";
+import { ADToBS, BSToAD, findLastDayOfMonthOfAdDate, findLastDayOfMonthOfBsDate } from "ad-bs-date-conversion";
 
 console.log(ADToBS("2021-04-13")); // Prints 2077-12-31
 console.log(BSToAD("2077-12-31")); // Prints 2021-04-13
 console.log(ADToBS("2021/04/13")); // Prints 2077-12-31
 console.log(BSToAD("2077/12/31")); // Prints 2021-04-13
+console.log(findLastDayOfMonthOfAdDate(2021, 7)); //Prints 31
+console.log(findLastDayOfMonthOfBsDate(2078, 4)); //Prints 32
 ```

@@ -232,6 +232,15 @@ export const findLastDayOfMonthOfAdDate = (year, month) => {
   return (new Date(milliDate).getDate());
 }
 
+export const findLastDayOfMonthOfBsDate = (year, month) => {
+  year = Number(year);
+  month = Number(month);
+  if ((year < 1970 && year > 2099) || (month > 0 && month < 13)){
+    return calendar_data[year][month - 1];
+  }
+  return null;
+}
+
 export const ADToBS = (date) => {
   date = date.replaceAll("/", "-");
   let separatedDate = date.split("-");
